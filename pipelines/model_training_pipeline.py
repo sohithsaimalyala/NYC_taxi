@@ -51,5 +51,6 @@ if test_mae < metric.get("test_mae"):
         input_example=features.sample(),
         model_schema=model_schema,
     )
-    model.save(str(model_path))else:
-    print(f"Skipping model registration because new model is not better!")
+    model.save(str(model_path))
+else:
+     print(f"Skipping model registration because new model is not better!")
